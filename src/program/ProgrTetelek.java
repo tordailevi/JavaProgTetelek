@@ -8,6 +8,40 @@ public class ProgrTetelek {
         int[] sorozat = {3,5,1,2,8,17,6};
         int hossz = sorozat.length;
         
+        osszegzes(sorozat, hossz);
+        
+        megszamlalas(sorozat);
+        
+        minKivalasztas(sorozat);
+        
+        maxKivalasztas(sorozat);
+        
+        kivalasztas(sorozat);
+        
+        eldontesEgy(sorozat);
+        
+        eldontesMind(sorozat);
+        
+        linearisKereses(sorozat);
+        
+        System.out.printf("A sorozat elemei: "+sorozat);
+        System.out.printf("Összeg: "+megszamlalas(sorozat));
+        System.out.printf("Páratlanok száma: "+megszamlalas(sorozat));
+               
+        int i = minKivalasztas(sorozat);
+        System.out.printf("A legkisebb elem helye %d: "+sorozat[i],i);
+        
+        int j = maxKivalasztas(sorozat);
+        System.out.printf("A legnagyobb elem helye %d: "+sorozat[j],j);
+        
+        int k = kivalasztas(sorozat);
+        System.out.printf("Az első 5-nél nagyobb elem helye: %d "+sorozat[i],k);
+        
+
+        
+        
+        
+        
     }
     
     public static int osszegzes(int [] sorozat, int hossz) {
